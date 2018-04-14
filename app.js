@@ -35,4 +35,5 @@ $(document).ready(function() {
 			$('#tweet').attr("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent('"' + json.quoteText + '" -' + author));
 		});
 	});
+	$('#tweet').attr("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent('"' + $("#quote").text() + '" -' + $("#author").text()));
 });
